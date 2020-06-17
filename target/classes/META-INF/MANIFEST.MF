@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Built-By: charusingla
+Build-Jdk: 11.0.3
+Implementation-Title: OrdersService
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: com.nagarro.msa
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-boot
+ -starter-parent/OrdersService
+Created-By: Maven Integration for Eclipse
+
