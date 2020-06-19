@@ -2,21 +2,13 @@ package com.nagarro.msa.orders.orderbean;
 
 import java.io.Serializable;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
-
-@Entity
-@Table(name="orders")
 public class Order implements Serializable{
 
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	@Id
-	@GeneratedValue
+
 	private Integer orderId;
 	private Integer userId;
 	private double orderAmount;
@@ -26,10 +18,9 @@ public class Order implements Serializable{
 		super();
 	}
 
-	public Order(int orderId, int userId, double orderAmount, String orderDate) {
+	public Order(int orderId, double orderAmount, String orderDate) {
 		super();
 		this.orderId = orderId;
-		this.userId = userId;
 		this.orderAmount = orderAmount;
 		this.orderDate = orderDate;
 	}
